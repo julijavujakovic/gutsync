@@ -1,0 +1,62 @@
+{
+  "onion": {
+    "rating": "high",
+    "servingNote": "Keep onion to about 1 tablespoon or less if you are testing your tolerance.",
+    "swap": "Try green tops or chives instead.",
+    "note": "Onion is often high FODMAP in larger servings."
+  },
+  "garlic": {
+    "rating": "high",
+    "servingNote": "Use a very small amount or skip it in the dish.",
+    "swap": "Try garlic-infused oil or a pinch of chives.",
+    "note": "Garlic is commonly high FODMAP."
+  },
+  "apple": {
+    "rating": "high",
+    "servingNote": "A small serving may be better tolerated than a large one.",
+    "swap": "Choose a banana or berries instead.",
+    "note": "Apples are frequently high FODMAP."
+  },
+  "milk": {
+    "rating": "moderate",
+    "servingNote": "Lactose-free milk or a small serving may feel easier.",
+    "swap": "Try lactose-free milk or almond milk.",
+    "note": "Dairy can be moderate depending on lactose tolerance."
+  },
+  "wheat": {
+    "rating": "moderate",
+    "servingNote": "Portion size matters; smaller amounts are often easier.",
+    "swap": "Try oats or rice-based grains.",
+    "note": "Wheat can be moderate for some people."
+  },
+  "avocado": {
+    "rating": "moderate",
+    "servingNote": "Keep portions modest, especially if you are very sensitive.",
+    "swap": "Use a smaller amount or swap for cucumber.",
+    "note": "Avocado can be moderate in larger portions."
+  },
+  "oats": {
+    "rating": "low",
+    "servingNote": "A standard serving is usually a gentle option.",
+    "swap": "No swap needed.",
+    "note": "Oats are commonly a low-FODMAP grain choice."
+  },
+  "eggs": {
+    "rating": "low",
+    "servingNote": "A usual serving is often well tolerated.",
+    "swap": "No swap needed.",
+    "note": "Eggs are often a low-FODMAP protein choice."
+  },
+  "spinach": {
+    "rating": "low",
+    "servingNote": "A standard serving is usually fine.",
+    "swap": "No swap needed.",
+    "note": "Spinach is often a low-FODMAP vegetable."
+  },
+  "carrot": {
+    "rating": "low",
+    "servingNote": "A standard serving is usually fine.",
+    "swap": "No swap needed.",
+    "note": "Carrots are commonly well tolerated in moderate portions."
+  }
+}

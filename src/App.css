@@ -1,0 +1,339 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fdf8f5 0%, #f9e4e1 100%);
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 248, 245, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 132, 122, 0.14);
+  box-shadow: 0 10px 24px rgba(212, 132, 122, 0.08);
+}
+
+.brand-link {
+  border: 0;
+  background: transparent;
+  color: #7a4f4a;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.35rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.nav-link {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  background: transparent;
+  color: #6f5a5d;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #d4847a, #c9b8d8);
+  color: #fffaf7;
+}
+
+.app-shell {
+  padding: 2.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-card,
+.interactive-panel,
+.module-showcase,
+.app-footer,
+.placeholder-card,
+.tab-content-card {
+  border-radius: 28px;
+  background: rgba(255, 248, 245, 0.92);
+  box-shadow: 0 16px 36px rgba(212, 132, 122, 0.12);
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 1.25rem;
+  padding: 2rem;
+  margin-bottom: 1.25rem;
+  animation: fadeInUp 0.65s ease both;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #d4847a;
+  margin-bottom: 0.4rem;
+}
+
+.app-copy {
+  color: #6f5a5d;
+  max-width: 720px;
+  font-size: 1.02rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.primary-link,
+.secondary-link {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.primary-link {
+  background: linear-gradient(135deg, #d4847a, #c9b8d8);
+  color: #fffaf7;
+}
+
+.secondary-link {
+  background: rgba(201, 184, 216, 0.24);
+  color: #7a4f4a;
+}
+
+.primary-link:hover,
+.secondary-link:hover,
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(212, 132, 122, 0.16);
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 220px;
+  padding: 1rem;
+}
+
+.hero-orb {
+  border-radius: 50%;
+  box-shadow: 0 16px 30px rgba(212, 132, 122, 0.16);
+  animation: orbFloat 3.8s ease-in-out infinite;
+}
+
+.hero-orb.one {
+  width: 96px;
+  height: 96px;
+  background: radial-gradient(circle at 30% 30%, #fffaf7, #f9e4e1 55%, #d4847a 100%);
+}
+
+.hero-orb.two {
+  width: 132px;
+  height: 132px;
+  background: radial-gradient(circle at 30% 30%, #fffaf7, #c9b8d8 55%, #b79ec5 100%);
+}
+
+.hero-orb.three {
+  width: 78px;
+  height: 78px;
+  background: radial-gradient(circle at 30% 30%, #fffaf7, #f9e4e1 55%, #d4847a 100%);
+}
+
+.interactive-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.panel-card,
+.placeholder-card,
+.tab-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.1rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(212, 132, 122, 0.16);
+  animation: fadeInUp 0.8s ease both;
+}
+
+.panel-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #5e4c51;
+  font-weight: 600;
+}
+
+.input-stack select,
+.input-stack textarea,
+.input-stack input[type='text'] {
+  border-radius: 12px;
+  border: 1px solid rgba(212, 132, 122, 0.2);
+  padding: 0.7rem 0.8rem;
+  background: rgba(255, 248, 245, 0.95);
+  color: #4b3c3f;
+  font: inherit;
+}
+
+.submit-button {
+  border: 0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.insight-card {
+  border-radius: 16px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(201, 184, 216, 0.2);
+  color: #6f4e50;
+  border: 1px solid rgba(201, 184, 216, 0.26);
+  animation: fadeInUp 0.45s ease both;
+}
+
+.insight-card ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1rem;
+}
+
+.module-showcase {
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.module-card {
+  border-radius: 20px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(212, 132, 122, 0.16);
+  box-shadow: 0 8px 20px rgba(212, 132, 122, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.app-footer {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  animation: fadeInUp 0.9s ease both;
+}
+
+.app-footer a {
+  color: #8b4c44;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orbFloat {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-card,
+  .interactive-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .module-grid,
+  .app-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-shell {
+    padding: 1rem;
+  }
+}
